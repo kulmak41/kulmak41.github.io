@@ -2,35 +2,125 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Спойлер</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <style>
-      .spoiler {
-        width: 300px;
-        height: 70px;
-        padding-top: 1px;
-        padding-left: 30px;
-        padding-right: 30px;
-        background-color: #27ae60;
-        color: #ecf0f1;
-        text-align: justify;
-        overflow: hidden;
-        transition: 1s;
+      @import url("https://fonts.googleapis.com/css?family=Play");
+      body {
+        font-family: Play;
       }
-      .spoiler:hover {
-        height: 400px;
+      h1 {
+        text-align: center;
+      }
+      main {
+        margin: 20px;
+      }
+      .box {
+        margin: auto;
+        height: 38vw;
+        width: 65vw;
+        position: relative;
+      }
+      .pic {
+        height: 11.25vw;
+        width: 20vw;
         transition: 1s;
+        background: 50%/100%;
+        border: 1px solid black;
+        position: absolute;
+        z-index: 100;
+      }
+
+      .pic__raw1 {
+        top: 0vw;
+      }
+      .pic__raw2 {
+        top: 13.25vw;
+      }
+      .pic__raw3 {
+        top: 26.5vw;
+      }
+
+      .pic__column1 {
+        left: 0vw;
+      }
+      .pic__column2 {
+        left: 22vw;
+      }
+      .pic__column3 {
+        left: 44vw;
+      }
+
+      .pic1 {
+        background-image: url("https://images.unsplash.com/photo-1553129738-0eae80232e7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+      }
+      .pic2 {
+        background-image: url("https://images.unsplash.com/photo-1550847067-93887e03cfbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+      }
+      .pic3 {
+        background-image: url("https://images.unsplash.com/photo-1551524484-635f78221cc4?ixlib=rb-1.2.1&auto=format&fit=crop&w=891&q=80");
+      }
+      .pic4 {
+        background-image: url("https://images.unsplash.com/photo-1551367595-a5727dbb8394?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
+      }
+      .pic5 {
+        background-image: url("https://images.unsplash.com/photo-1551214012-84f95e060dee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+      }
+      .pic6 {
+        background-image: url("https://images.unsplash.com/photo-1548407260-da850faa41e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=887&q=80");
+      }
+      .pic7 {
+        background-image: url("https://images.unsplash.com/photo-1547968196-230ad3b7cbf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1050&q=80");
+      }
+      .pic8 {
+        background-image: url("https://images.unsplash.com/photo-1547974996-050bf23b6196?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+      }
+      .pic9 {
+        background-image: url("https://images.unsplash.com/photo-1548198073-328401ddd50a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&auto=format&fit=crop&w=1050&q=80");
+      }
+
+      .pic:hover {
+        width: 32vw;
+        height: 18vw;
+        z-index: 200;
+        transition: 1s;
+        box-shadow: 0vw 0vw 5vw black;
+      }
+
+      .pic__column2:hover {
+        left: 16vw;
+      }
+      .pic__column3:hover {
+        left: 32vw;
+      }
+      .pic__raw2:hover {
+        top: 9.875vw;
+      }
+      .pic__raw3:hover {
+        top: 19.75vw;
       }
     </style>
   </head>
   <body>
-    <div class="spoiler">
-      <h2>Удивительный факт!</h2>
-      <p>
-        У актиний рот может растягиваться настолько, что это морское животное
-        вполне способно принимать в пищу добычу таких же размеров, как и они
-        сами.
-      </p>
-      <img src="img/actinia.jpg" />
-    </div>
+    <header>
+      <h1>Красивые картинки</h1>
+    </header>
+    <main>
+      <div class="box">
+        <div class="pic pic__raw1 pic__column1 pic1"></div>
+        <div class="pic pic__raw1 pic__column2 pic2"></div>
+        <div class="pic pic__raw1 pic__column3 pic3"></div>
+
+        <div class="pic pic__raw2 pic__column1 pic4"></div>
+        <div class="pic pic__raw2 pic__column2 pic5"></div>
+        <div class="pic pic__raw2 pic__column3 pic6"></div>
+
+        <div class="pic pic__raw3 pic__column1 pic7"></div>
+        <div class="pic pic__raw3 pic__column2 pic8"></div>
+        <div class="pic pic__raw3 pic__column3 pic9"></div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
