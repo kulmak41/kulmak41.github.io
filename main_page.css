@@ -1,0 +1,43 @@
+@font-face {
+  font-family: starjedi;
+  src: url(starjedi/Starjedi.ttf);
+}
+.header__stripe {
+  color: black;
+  background-color: rgb(248, 248, 248);
+}
+.nav__btn {
+  color: black;
+}
+.nav__btn::after {
+  background-color: black;
+}
+.header__pic {
+  background: rgb(0, 0, 0) url("img/galaxy.jpg") 50% / cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+h1 {
+  color: rgb(255, 238, 0);
+  text-align: center;
+  width: 100%;
+  line-height: 125px;
+  padding: 20px 0 35px 0;
+  font-family: starjedi;
+  font-size: 7rem;
+  background-color: rgba(0, 0, 0, 0.589);
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .menu__btn {
+    background-color: #fff;
+    color: black;
+    border: 1px inset black;
+    right: -35px;
+  }
+  h1 {
+    font-size: 6rem;
+    line-height: 90px;
+  }
+}

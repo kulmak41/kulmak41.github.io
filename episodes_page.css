@@ -1,0 +1,103 @@
+.header__stripe {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.nav__btn {
+  color: white;
+}
+.nav__btn::after {
+  background-color: white;
+}
+main {
+  padding: 0 15%;
+}
+
+.eplist__title {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.ep__ul {
+  margin-top: 10px;
+}
+.ep__li {
+  display: inline-block;
+}
+.ep__btn {
+  display: block;
+  padding: 9px 14px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bolder;
+  box-sizing: border-box;
+  border: 2px solid rgb(43, 43, 43);
+  transition: 0.3s;
+}
+.ep__btn:hover {
+  background-color: rgb(43, 43, 43);
+  color: white;
+  transition: 0.3s;
+}
+.art {
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  padding: 15px 25px 35px 25px;
+  margin: 40px 0;
+  box-shadow: 0 0 10px black;
+}
+.ep__title {
+  text-align: center;
+  margin: 8px 0 15px 0;
+}
+.descrip {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  align-items: flex-start;
+}
+.ep__img {
+  width: 300px;
+  object-fit: cover;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.ep__p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .menu__btn {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    right: -33px;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+  .eplist__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .ep__ul {
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+  }
+  .art {
+    padding: 15px 15px 15px;
+  }
+  .descrip {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ep__img {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
