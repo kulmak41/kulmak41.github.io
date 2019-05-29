@@ -99,5 +99,7 @@ main {
   .ep__img {
     margin-bottom: 15px;
     margin-right: 0;
+    width: 85%;
+    max-width: 300px;
   }
 }
