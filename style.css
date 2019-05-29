@@ -87,6 +87,9 @@ body {
   .to_top_btn {
     bottom: 5%;
   }
+  .to_top_btn:hover {
+  	animation: none;
+  }
   .menu__btn {
     display: block;
     position: absolute;
