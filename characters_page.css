@@ -1,24 +1,30 @@
 .header__stripe {
   background-color: rgb(43, 43, 43);
   color: white;
-}
+} 
+.menu__btn {
+    background-color: rgb(43, 43, 43);
+    color: white;
+  }
 .nav__btn {
   color: white;
 }
 .nav__btn::after {
   background-color: white;
 }
-main {
-  padding: 0 10%;
-}
+
+/* Карточки персонажей */
 .characters {
   margin-top: 20px;
+  padding: 0 10%;
   display: flex;
   justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
 }
 .card {
+  max-width: 350px;
+  width: 30%;
   border-radius: 20px;
   box-shadow: 0 0 15px black;
   margin: 20px 20px;
@@ -27,38 +33,101 @@ main {
   text-align: center;
 }
 .character__pic {
-  width: 350px;
+  width: 100%;
   height: 420px;
   object-fit: cover;
   object-position: 50% 0;
   display: block;
   margin: auto;
 }
-.descrip__btn {
+.descrip__open__btn {
   padding: 10px 12px;
   border-radius: 20px;
   color: black;
   text-decoration: none;
   text-align: center;
   display: block;
-  border: 1px solid black;
+  border: 1px solid rgb(43, 43, 43);
   width: 150px;
   margin: 20px auto;
   transition: 0.3s;
+  cursor: pointer;
 }
-.descrip__btn:hover {
+.descrip__open__btn:hover {
   background: rgb(43, 43, 43);
   color: white;
   transition: 0.3s;
 }
 
-@media (max-width: 1440px) {
-  .menu__btn {
-    background-color: rgb(43, 43, 43);
-    color: white;
-    right: -33px;
-  }
-  main {
+/* Окна описания */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.562);
+  align-items: center;
+  justify-content: center;
+}
+.descrip__block {
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  width: 70%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.descrip__close__btn {
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  width: 25px;
+  color: grey;
+  transition: 0.3s;
+  font-size: 20px;
+  cursor: pointer;
+}
+.descrip__close__btn:hover {
+  color: black;
+}
+.description__text {
+  text-align: justify;
+}
+
+@media (max-width: 1500px){
+  .characters {
     padding: 0 15px;
   }
 }
+
+@media (max-width: 1200px) {
+  .card {
+    width: 42%;
+  }
+  .character__pic {
+    height: 60vh;
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .characters {
+    padding: 0 10px;
+  }
+  .card {
+    width: 90%;
+  }
+  .descrip__block {
+    width: 80%;
+  }
+}
+

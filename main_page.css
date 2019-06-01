@@ -6,6 +6,10 @@
   color: black;
   background-color: rgb(248, 248, 248);
 }
+.menu__btn {
+    background-color: rgb(248, 248, 248);
+    color: black;
+  }
 .nav__btn {
   color: black;
 }
@@ -30,12 +34,6 @@ h1 {
   margin: 0;
 }
 @media (max-width: 768px) {
-  .menu__btn {
-    background-color: #fff;
-    color: black;
-    border: 1px inset black;
-    right: -35px;
-  }
   h1 {
     font-size: 6rem;
     line-height: 90px;

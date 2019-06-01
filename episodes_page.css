@@ -2,22 +2,22 @@
   background-color: rgb(43, 43, 43);
   color: white;
 }
+.menu__btn {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
 .nav__btn {
   color: white;
 }
 .nav__btn::after {
   background-color: white;
 }
-main {
-  padding: 0 15%;
-}
 
 .eplist__title {
-  margin-left: 10px;
-  margin-bottom: 5px;
+  margin: 20px 15% 5px;
 }
 .ep__ul {
-  margin-top: 10px;
+  margin: 10px 15% 0 15%;
 }
 .ep__li {
   display: inline-block;
@@ -45,7 +45,7 @@ main {
   background-color: rgb(238, 238, 238);
   border-radius: 10px;
   padding: 15px 25px 35px 25px;
-  margin: 40px 0;
+  margin: 40px 15%;
   box-shadow: 0 0 10px black;
 }
 .ep__title {
@@ -54,13 +54,13 @@ main {
 }
 .descrip {
   height: 100%;
-  width: 100%;
   display: flex;
 
   align-items: flex-start;
 }
 .ep__img {
-  width: 300px;
+  max-width: 300px;
+  width: 40%;
   object-fit: cover;
   margin-right: 15px;
   flex-shrink: 0;
@@ -71,15 +71,6 @@ main {
 }
 
 @media (max-width: 768px) {
-  .menu__btn {
-    background-color: rgb(43, 43, 43);
-    color: white;
-    right: -33px;
-  }
-
-  main {
-    padding: 0 15px;
-  }
   .eplist__title {
     text-align: center;
     margin-bottom: 15px;
@@ -90,16 +81,16 @@ main {
     padding: 0;
   }
   .art {
-    padding: 15px 15px 15px;
+    padding: 15px;
+    margin: 40px 10px;
   }
   .descrip {
     flex-wrap: wrap;
     justify-content: center;
   }
   .ep__img {
+    width: calc(100% - 15px);
     margin-bottom: 15px;
     margin-right: 0;
-    width: 85%;
-    max-width: 300px;
   }
 }
