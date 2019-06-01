@@ -4,7 +4,7 @@ menu_btn.addEventListener("click", function() {
   menu_btn_icon.classList.toggle("fa-times");
 });
 
-window.addEventListener("click", function(event) {
+/*window.addEventListener("click", function(event) {
   if (
     event.target != header_stripe &&
     event.target != menu_btn_icon &&
@@ -15,4 +15,4 @@ window.addEventListener("click", function(event) {
     menu_btn_icon.classList.toggle("fa-bars");
     menu_btn_icon.classList.toggle("fa-times");
   }
-})
+})*/
