@@ -6,12 +6,22 @@
   background-color: rgb(43, 43, 43);
   color: white;
 }
+.main__nav {
+  background-color: rgb(43, 43, 43);
+}
 .nav__btn {
   color: white;
 }
 .nav__btn::after {
   background-color: white;
 }
+.current__page {
+  text-shadow: 0 0 2px white;
+}
+.current__page::after {
+  box-shadow: 0 0 2px white;
+}
+
 
 .eplist__title {
   margin: 20px 15% 5px;
@@ -76,7 +86,7 @@
     margin-bottom: 15px;
   }
   .ep__ul {
-    width: fit-content;
+    width: max-content;
     margin: auto;
     padding: 0;
   }

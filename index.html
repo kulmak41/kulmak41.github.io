@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Звёздные Войны</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main_page.css" />
     <link
@@ -22,7 +31,7 @@
           <i class="fas fa-bars" id="menu_btn_icon"></i>
         </div>
         <p class="site__name">Звёздные Войны</p>
-        <nav class="main__nav">
+        <nav class="main__nav" id="main__nav">
           <ul class="nav__ul">
             <li class="nav__li">
               <a href="index.html" class="nav__btn current__page">Главная</a>
@@ -33,7 +42,9 @@
             <li class="nav__li">
               <a href="characters.html" class="nav__btn">Перснонажи</a>
             </li>
-            <li class="nav__li"><a href="" class="nav__btn">О сайте</a></li>
+            <li class="nav__li">
+              <a href="about.html" class="nav__btn">О сайте</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -44,8 +55,216 @@
     </header>
     <main>
       <a href="#top" class="to_top_btn"><i class="fas fa-angle-up"></i></a>
+      <section class="creation">
+        <div class="right__img flex1__item">
+          <div class="img1"></div>
+          <p class="img__title">Джордж Лукас</p>
+        </div>
+        <h2 class="creation__title">История</h2>
+
+        <p class="description__text flex1__item">
+          «Звёздные войны» (англ. Star Wars) — североамериканская фантастическая
+          медиафраншиза, созданная Джорджем Лукасом.
+        </p>
+
+        <p class="description__text flex1__item">
+          Первое произведение франшизы, роман научно-фантастического жанра,
+          вышло в свет в 1976 году, а успех к ней пришёл в 1977 году с выходом
+          на экраны фильма «Звёздные войны» (который позже получил подзаголовок
+          «Эпизод IV: Новая надежда»), и моментально стала феноменом массовой
+          культуры. Затем последовали успешные продолжения: «Империя наносит
+          ответный удар» (1980 года) и «Возвращение джедая» (1983 года); все три
+          фильма формируют так называемую оригинальную трилогия. Позже, в период
+          с 1999 года по 2005 год, вышла трилогия фильмов ведущая повествование
+          во времена, предшествующие событиям оригинальной трилогии. Подробнее с
+          фильмамим киносаги Вы можете ознкомиться на
+          <a href="episodes.html" class="episodes__link">следующей странице</a>.
+        </p>
+
+        <p class="description__text flex1__item">
+          «Звёздные войны» стали одной из крупнейших медиафраншиз мира и
+          получила значительное развитие благодаря фанатам и поклонникам.
+          «Звёздным войнам» даже принадлежит рекорд в «Книге рекордов Гиннесса»,
+          как «Наиболее успешная медиафраншиза по фильмам».
+        </p>
+      </section>
+
+      <section class="spheres">
+        <h2 class="spheres__section__title">Звёздные Войны охватывают</h2>
+        <div class="spheres__container">
+          <div class="sphere">
+            <div class="sphere__imgs__box">
+              <img
+                src="img/main_page/series2.jpg"
+                alt=""
+                class="sphere__img sphere__img1"
+              />
+              <img
+                src="img/main_page/series1.jpg"
+                alt=""
+                class="sphere__img sphere__img2"
+              />
+              <img
+                src="img/Posters/ep3.jpg"
+                alt=""
+                class="sphere__img sphere__img3"
+              />
+            </div>
+            <h3 class="sphere__name">Фильмы и сериалы</h3>
+          </div>
+          <div class="sphere">
+            <div class="sphere__imgs__box">
+              <img
+                src="img/main_page/book1.jpg"
+                class="sphere__img sphere__img1"
+                alt=""
+              />
+              <img
+                src="img/main_page/book2.jpg"
+                class="sphere__img sphere__img2"
+                alt=""
+              />
+              <img
+                src="img/main_page/book3.jpg"
+                class="sphere__img sphere__img3"
+                alt=""
+              />
+            </div>
+            <h3 class="sphere__name">Книги и комиксы</h3>
+          </div>
+
+          <div class="sphere">
+            <div class="sphere__imgs__box">
+              <img
+                src="img/main_page/game1.jpg"
+                alt=""
+                class="sphere__img sphere__img1"
+              />
+              <img
+                src="img/main_page/game2.jpg"
+                alt=""
+                class="sphere__img sphere__img2"
+              />
+              <img
+                src="img/main_page/game3.jpg"
+                alt=""
+                class="sphere__img sphere__img3"
+              />
+            </div>
+            <h3 class="sphere__name">Игры</h3>
+          </div>
+          <div class="sphere">
+            <img src="img/main_page/park1.jpg" alt="" class="park__img" />
+            <h3 class="sphere__name">тематические парки</h3>
+          </div>
+        </div>
+      </section>
+
+      <div class="statistics">
+        <h2 class="statistics__section__title">Звёздные Войны в цифрах</h2>
+        <div class="statistics__container">
+          <div class="statistics__item">
+            <p class="stat__number">2</p>
+            <p class="stat__sign">оскара</p>
+          </div>
+          <div class="statistics__item">
+            <p class="stat__number">
+              7,5<span class="little__letters">млрд</span>
+            </p>
+            <p class="stat__sign">
+              долларов собрано в прокате
+            </p>
+          </div>
+          <div class="statistics__item">
+            <p class="stat__number">
+              3<span class="little__letters">-ье</span>
+            </p>
+            <p class="stat__sign">место среди кинофраншиз по прибыли</p>
+          </div>
+          <div class="statistics__item">
+            <p class="stat__number">
+              42<span class="little__letters">млрд</span>
+            </p>
+            <p class="stat__sign">долларов стоимость франшизы</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="universe">
+        <div class="universe__img">
+          <div class="universe__description">
+            <h2 class="universe__description__title">Место действий</h2>
+            <p class="universe__description__text">
+              События франшизы «Звёздные войны» происходят в удалённой
+              вымышленной Галактике в далёком прошлом. В ней сосуществуют
+              множество существ и инородцев (чаще всего гуманоидов). Жители
+              Галактики владеют роботами, которых здесь называют дроидами,
+              которые помогают им с ежедневными делами, а космические
+              путешествия являются обыденностью.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="force__description">
+        <div class="force__box">
+          <div class="left__rotated signed__img flex2__item">
+            <img src="img/main_page/jedi.jpg" alt="" class="img2" />
+            <p class="img__title">Джедай Йода</p>
+          </div>
+          <div class="text__box  flex2__item">
+            <h2 class="force__title">Сила</h2>
+            <p class="description__text">
+              Духовным и мистическим элементом Вселенной «Звёздных войн»
+              является «Сила». В оригинальном фильме её описывали как
+              «энергетическое поле, создаваемое всеми живыми существами. Она
+              окружает и пронизывает нас. Она связывает Вселенную воедино». Те,
+              кто имел связь с Силой с рождения, обладали улучшенными
+              рефлексами, а благодаря тренировкам и медитациям они могли достичь
+              различный сверхъестественных умений (таких как телекинез,
+              ясновидение, прекогниция и контроль разума). Существует две
+              основные группы владеющие Силой: джедаи, которые используют
+              светлую сторону Силы, и ситхи, обращающиеся к тёмной стороне Силы.
+            </p>
+            <p class="description__text">
+              Джедаи распоряжались своими возможностями с целью служения
+              обществу, защиты прав и свобод разумных рас, а также оберегали
+              живую природу и старались поступать по справедливости в целом.
+            </p>
+            <p class="description__text">
+              Основной идеей тёмной стороны силы служило преобразование своих
+              эмоций, в частности, негативных, таких как страх, гнев и
+              ненависть, в источник увеличения собственной мощи, для достижения,
+              в основном, могущества.
+            </p>
+          </div>
+          <div class="right__rotated signed__img  flex2__item">
+            <img src="img/main_page/sith.jpg" alt="" class="img3" />
+            <p class="img__title">Ситх Дарт Сидиус</p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="main__footer">
+      <p class="main__footer__text">
+        Сайт разработал Кулешов Макар, ученик Московской Школы программистов
+      </p>
+      <p class="main__footer__text">
+        При создании сайта использовались материалы сайтов
+        <a href="https://www.kinopoisk.ru/" class="source__link">kinopoisk.ru</a
+        >,
+        <a
+          href="https://starwars.fandom.com/ru/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+          class="source__link"
+          >starwars.fandom.com</a
+        >,
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+          class="source__link"
+          >wikipedia.org</a
+        >
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

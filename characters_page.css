@@ -1,21 +1,30 @@
 .header__stripe {
   background-color: rgb(43, 43, 43);
   color: white;
-} 
+}
 .menu__btn {
-    background-color: rgb(43, 43, 43);
-    color: white;
-  }
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.main__nav {
+  background-color: rgb(43, 43, 43);
+}
 .nav__btn {
   color: white;
 }
 .nav__btn::after {
   background-color: white;
 }
+.current__page {
+  text-shadow: 0 0 2px white;
+}
+.current__page::after {
+  box-shadow: 0 0 2px white;
+}
 
 /* Карточки персонажей */
 .characters {
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 0 10%;
   display: flex;
   justify-content: center;
@@ -64,7 +73,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3000;
   top: 0;
   left: 0;
   height: 100vh;
@@ -103,7 +112,7 @@
   text-align: justify;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1500px) {
   .characters {
     padding: 0 15px;
   }
@@ -114,7 +123,7 @@
     width: 42%;
   }
   .character__pic {
-    height: 60vh;
+    height: 50vh;
     max-height: 420px;
   }
 }
@@ -129,5 +138,7 @@
   .descrip__block {
     width: 80%;
   }
+  .character__pic {
+    height: 60vh;
+  }
 }
-

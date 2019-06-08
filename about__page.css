@@ -1,0 +1,36 @@
+.header__stripe {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.menu__btn {
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+.main__nav {
+  background-color: rgb(43, 43, 43);
+}
+.nav__btn {
+  color: white;
+}
+.nav__btn::after {
+  background-color: white;
+}
+.current__page {
+  text-shadow: 0 0 2px white;
+}
+.current__page::after {
+  box-shadow: 0 0 2px white;
+}
+
+.form {
+  display: block;
+  width: 640px;
+  height: 1107px;
+  margin: 30px auto;
+}
+
+@media (max-width: 425px) {
+  .form {
+    width: 95%;
+  }
+}
